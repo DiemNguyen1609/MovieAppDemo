@@ -1,7 +1,7 @@
 package com.example.movieappdemo.di
 
 import com.example.api.MovieApi
-import com.example.api.repositores.MovieRepository
+import com.example.domain.repositores.MovieRepository
 import com.example.movieappdemo.BuildConfig
 import com.example.movieappdemo.MovieViewModel
 import com.example.repository.MovieRemoteImpl

@@ -3,10 +3,10 @@ package com.example.movieappdemo
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.api.entities.Data
-import com.example.api.entities.DiscoverResult
-import com.example.api.entities.Status
-import com.example.api.usecases.DiscoverUseCase
+import com.example.domain.entities.Data
+import com.example.domain.entities.DiscoverResult
+import com.example.domain.entities.Status
+import com.example.domain.usecases.DiscoverUseCase
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import org.koin.standalone.KoinComponent
