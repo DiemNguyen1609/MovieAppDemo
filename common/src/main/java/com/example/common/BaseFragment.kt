@@ -1,4 +1,4 @@
 package com.example.common
 
-class kkk {
+class BaseFragment {
 }

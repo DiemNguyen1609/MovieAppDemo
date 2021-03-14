@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="" />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/userProfileFragment"
+        android:icon="@drawable/ic_user"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_menu"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:orderInCategory="4"
+        android:title=""
+        />
+
+</menu>
