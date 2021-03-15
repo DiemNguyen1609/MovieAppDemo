@@ -1,6 +1,5 @@
 package com.example.domain.repositores
 
-import com.example.api.entities.*
 import com.example.domain.entities.DiscoverResult
 import io.reactivex.Flowable
 

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/home_state"
         android:enabled="true"
         android:orderInCategory="1"
         app:showAsAction="always"
@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/searchFragment"
-        android:icon="@drawable/ic_search"
+        android:icon="@drawable/search_state"
         android:enabled="true"
         app:showAsAction="always"
         android:orderInCategory="2"
@@ -21,7 +21,7 @@
 
     <item
         android:id="@+id/userProfileFragment"
-        android:icon="@drawable/ic_user"
+        android:icon="@drawable/user_state"
         android:enabled="true"
         app:showAsAction="always"
         android:orderInCategory="3"
@@ -30,7 +30,7 @@
 
     <item
         android:id="@+id/settingFragment"
-        android:icon="@drawable/ic_menu"
+        android:icon="@drawable/menu_state"
         android:enabled="true"
         app:showAsAction="always"
         android:orderInCategory="4"
