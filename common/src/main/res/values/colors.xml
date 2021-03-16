@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue_opacity_15">#2688dbf5</color>
+    <color name="transparent_color">#B3231f20</color>
+    <color name="grey_bg_icon">#e1e1e1</color>
+    <color name="blue_bg_icon">#00a0dc</color>
+    <color name="transparent">#00000000</color>
+    <color name="md_blue_800">#1565C0</color>
+</resources>

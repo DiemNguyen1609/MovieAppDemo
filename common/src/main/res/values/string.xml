@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieAppDemo</string>
+    <string name="popular_movie">Popular Movies</string>
+    <string name="upcoming_movie">Upcoming Movies</string>
+    <string name="top_rated_movie">Top Rated</string>
+
+</resources>
