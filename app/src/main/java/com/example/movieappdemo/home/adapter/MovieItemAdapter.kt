@@ -22,7 +22,7 @@ class MovieItemAdapter(
     }
 
     inner class MovieItemViewHolder(val v: View) : RecyclerView.ViewHolder(v) {
-        fun bindView(item: MovieItemModel, position: Int) {
+        fun bindView(item: MovieItemModel, position: Int, lastItem: Int) {
             v.apply {
 
                 Glide.with(context)
@@ -32,6 +32,29 @@ class MovieItemAdapter(
 
                 setOnClickListener {
                     callback.invoke(item.id)
+                }
+
+
+                when (position) {
+                    0 -> {
+                        cardviewMovieItem.setPadding(
+                            context.resources.getDimension(R.dimen._15).toInt(),
+                            0,
+                            0,
+                            0
+                        )
+                    }
+                    lastItem -> {
+                        cardviewMovieItem.setPadding(
+                            context.resources.getDimension(R.dimen._10).toInt(),
+                            0,
+                            context.resources.getDimension(R.dimen._15).toInt(),
+                            0
+                        )
+                    }
+                    else -> {
+                        cardviewMovieItem.setPadding( context.resources.getDimension(R.dimen._10).toInt(), 0, 0, 0)
+                    }
                 }
             }
         }
@@ -48,6 +71,6 @@ class MovieItemAdapter(
     }
 
     override fun onBindViewHolder(holder: MovieItemViewHolder, position: Int) {
-        holder.bindView(movieData[position], position)
+        holder.bindView(movieData[position], position, movieData.size - 1)
     }
 }
