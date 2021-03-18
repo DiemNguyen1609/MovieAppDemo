@@ -41,7 +41,7 @@ class MovieAdapter(
                     layoutManager =
                         LinearLayoutManager(v.context, LinearLayoutManager.HORIZONTAL, false)
                     adapter = movieItemAdapter
-                    addItemDecoration(SpacesItemDecoration(5.dp()))
+                    //addItemDecoration(SpacesItemDecoration(10.dp()))
                 }
 
             }

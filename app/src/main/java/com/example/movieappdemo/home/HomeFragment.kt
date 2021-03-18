@@ -234,7 +234,7 @@ class HomeFragment : Fragment() {
             layoutManager =
                 LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
             adapter = movieAdapter
-            addItemDecoration(SpacesItemDecoration(15.dp()))
+            //addItemDecoration(SpacesItemDecoration(30.dp()))
         }
 
 
