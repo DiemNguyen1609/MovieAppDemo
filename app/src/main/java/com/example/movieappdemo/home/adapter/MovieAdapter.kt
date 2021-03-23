@@ -3,16 +3,10 @@ package com.example.movieappdemo.home.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.common.extension.dp
 import com.example.movieappdemo.R
-import com.example.movieappdemo.home.SpacesItemDecoration
-import com.example.movieappdemo.home.model.MovieItemModel
 import com.example.movieappdemo.home.model.MovieListModel
-import kotlinx.android.synthetic.main.item_movie_layout.view.*
 import kotlinx.android.synthetic.main.movie_layout.view.*
 
 class MovieAdapter(

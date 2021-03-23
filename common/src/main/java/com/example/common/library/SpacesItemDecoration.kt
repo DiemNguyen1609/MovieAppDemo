@@ -1,4 +1,4 @@
-package com.example.movieappdemo.home
+package com.example.common.library
 
 import android.graphics.Canvas
 import android.graphics.Rect

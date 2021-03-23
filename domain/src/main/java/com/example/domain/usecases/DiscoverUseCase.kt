@@ -7,9 +7,9 @@ import com.example.domain.repositores.MovieRepository
 import io.reactivex.Flowable
 
 class DiscoverUseCase(
-    private val transformer : FlowableRxTransformer<DiscoverResult>,
+    transformer: FlowableRxTransformer<DiscoverResult>,
     private val repositories: MovieRepository
-) : BaseFlowableUseCase<DiscoverResult>(transformer){
+) : BaseFlowableUseCase<DiscoverResult>(transformer) {
     override fun createFlowable(data: Map<String, Any>?): Flowable<DiscoverResult> {
         val map = mutableMapOf<String, String>()
         return if (data !== null) {
@@ -19,7 +19,7 @@ class DiscoverUseCase(
             repositories.requestDiscover(map)
     }
 
-fun requestDiscover():Flowable<DiscoverResult>{
-    return single()
-}
+    fun requestDiscover(): Flowable<DiscoverResult> {
+        return single()
+    }
 }

@@ -1,11 +1,10 @@
 package com.example.movieappdemo.di
 
-import com.example.api.MovieApi
+import com.example.data.api.MovieApi
 import com.example.domain.repositores.MovieRepository
 import com.example.movieappdemo.BuildConfig
-import com.example.movieappdemo.MovieViewModel
-import com.example.repository.MovieRemoteImpl
-import com.example.repository.MovieRepositoryImpl
+import com.example.data.repository.MovieRemoteImpl
+import com.example.data.repository.MovieRepositoryImpl
 import org.koin.android.viewmodel.ext.koin.viewModel
 import org.koin.dsl.module.module
 import retrofit2.Retrofit
@@ -19,7 +18,10 @@ val mNetworkModules = module {
 }
 
 val mLoginRepositoryModules = module {
-    single(name = "movie_remote") { MovieRemoteImpl(api = get(API)) }
+    single(name = "movie_remote") {
+        MovieRemoteImpl(
+            api = get(API)
+        )
+    }
     single { MovieRepositoryImpl(remote = get("movie_remote")) as MovieRepository }
-    viewModel { MovieViewModel(get()) }
 }

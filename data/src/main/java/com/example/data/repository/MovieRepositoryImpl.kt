@@ -1,4 +1,4 @@
-package com.example.repository
+package com.example.data.repository
 
 import com.example.domain.repositores.MovieRepository
 import com.example.domain.entities.DiscoverResult

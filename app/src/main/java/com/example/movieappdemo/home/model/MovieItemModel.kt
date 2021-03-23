@@ -1,10 +1,10 @@
 package com.example.movieappdemo.home.model
 
-import retrofit2.http.Url
 
 data class MovieItemModel(
     val id: String,
-    val imgRes: String
+    val imgRes: String,
+    val title: String
 )
 
 data class MovieListModel(

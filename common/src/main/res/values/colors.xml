@@ -6,4 +6,5 @@
     <color name="blue_bg_icon">#00a0dc</color>
     <color name="transparent">#00000000</color>
     <color name="md_blue_800">#1565C0</color>
+    <color name="button_in_alert_dialog_color">#007aff</color>
 </resources>
